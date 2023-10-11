@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link
+            rel="shortcut icon"
+            href="{{ url_for('static', filename='favicon.ico') }}"
+        />
+        <title>Rachel</title>
+    </head>
+    <body>
+        <h1>{{ heading }}</h1>
+        <nav>
+            <a href="/">home</a><br />
+            <a href="/create">create new dataset</a><br />
+            <a href="/make-route">see optimal route</a><br />
+            <a href="/view-db">view db</a><br />
+        </nav>
+        <h2>By:</h2>
+        <ul>
+            <li>Rachel Gupta(20BCE1977)</li>
+        </ul>
+    </body>
+</html>

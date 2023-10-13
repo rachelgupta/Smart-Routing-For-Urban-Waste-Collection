@@ -1,4 +1,4 @@
-# Smart-Routing-For-Urban-Waste-Collection
+![image](https://github.com/rachelgupta/Smart-Routing-For-Urban-Waste-Collection/assets/83275253/f0483926-7e38-4a54-b5e0-e84925106edc)# Smart-Routing-For-Urban-Waste-Collection
 
 ## 1. Problem
 Municipal solid waste (MSW) is considered as one of the primary factors that contribute greatly to the rising of climate change and global warming affecting sustainable development in many different ways. It is indeed necessary to investigate an efficient computerized method for the optimization of MSW collection that minimizes the environmental and other factors according to a given waste collection scenario.
@@ -29,19 +29,19 @@ Our system has segregated trash bins that are fitted with sensors to measure the
 
 ### b. Data Used
 The following parameters are used for categorization:
-1. Amount of garbage: Garbage is safe to be collected when it can work for 2 more days (to account for delays or public holidays)
-2. Type of garbage: Waste generated can be of many different types, which may require different treatment. For example, dry waste is safer to keep in an enclosed location when compared to wet waste, thus, wet
+1. ***Amount of garbage:*** Garbage is safe to be collected when it can work for 2 more days (to account for delays or public holidays)
+2. ***Type of garbage:*** Waste generated can be of many different types, which may require different treatment. For example, dry waste is safer to keep in an enclosed location when compared to wet waste, thus, wet
 waste requires more frequent cleaning (regardless of the fill level).
-3. Garbage Fill Rate: Just like the type of waste generated, the amount of waste generated in a day also varies widely and knowing the areas which create more trash per day can help a lot in long-term route planning and for equal division of garbage. As cities increase in size, and routes change, knowing the fill rates can help in breaking up routes.
-4. Area population: As the system is aimed towards Municipalities, they already have a database of population. As populations fluctuate, that data can also be used to facilitate long term planning of waste management resources.
-5. Traffic/Weather conditions: During routing, the traffic and weather conditions of the city will also be taken into account. Increased traffic may mean delays and thus, routes may need to change.
+3. ***Garbage Fill Rate:*** Just like the type of waste generated, the amount of waste generated in a day also varies widely and knowing the areas which create more trash per day can help a lot in long-term route planning and for equal division of garbage. As cities increase in size, and routes change, knowing the fill rates can help in breaking up routes.
+4. ***Area population:*** As the system is aimed towards Municipalities, they already have a database of population. As populations fluctuate, that data can also be used to facilitate long term planning of waste management resources.
+5. ***Traffic/Weather conditions:*** During routing, the traffic and weather conditions of the city will also be taken into account. Increased traffic may mean delays and thus, routes may need to change.
 
 ### c. Time Periods
 Data from garbage bins would be collected on a daily basis. This data would be sent to the servers.
 Time Periods:
-. Initial data collection period: 2-4 weeks
-. Initial rollout: 2-4 weeks
-. Final rollout: 2-4 weeks
+<br>. **Initial data collection period:** 2-4 weeks
+<br>. **Initial rollout:** 2-4 weeks
+<br>. **Final rollout:** 2-4 weeks
 
 ## 5. Methodology
 ### a. Overview
@@ -51,20 +51,22 @@ In our proposal, garbage bins will be fitted with sensors which send the data to
 
 ### b. Hardware
 The hardware system was implemented using the Arduino platform, which is a low-cost, open-source microcontroller hardware platform. The components used were:
-1. Arduino Uno Board: The Arduino Uno is one of the first USB-based Arduino boards. Being an open-source microcontroller and a general purpose board, the Arduino Uno is one of the most popular microcontrollers
+1. ***Arduino Uno Board:*** The Arduino Uno is one of the first USB-based Arduino boards. Being an open-source microcontroller and a general purpose board, the Arduino Uno is one of the most popular microcontrollers
 for a vast number of applications.
-2. Ultrasonic Sensor: This is a sound-based sensor which can be used to determine the level of trash in the container.
-3. DHT11 Temperature and Humidity Sensor: It is a low-cost temperature and humidity sensor which will be used to determine the kind of waste in the trash can. As wet waste leads to higher temperatures and humidity in enclosed places. This can be used to determine if waste is wet or dry
-4. Piezo Buzzer: Used to alert when the garbage truck is approaching or the can is full.
-5. ESP8266-01 Wi-Fi Module: The ESP8266 is a very user-friendly and low-cost device to provide internet connectivity to your projects. The module can work both as an Access point and as a station. It will be used to send data to the server. The hardware system will be fitted in every garbage bin.
+2. ***Ultrasonic Sensor:*** This is a sound-based sensor which can be used to determine the level of trash in the container.
+3. ***DHT11 Temperature and Humidity Sensor:*** It is a low-cost temperature and humidity sensor which will be used to determine the kind of waste in the trash can. As wet waste leads to higher temperatures and humidity in enclosed places. This can be used to determine if waste is wet or dry
+4. ***Piezo Buzzer:*** Used to alert when the garbage truck is approaching or the can is full.
+5. ***ESP8266-01 Wi-Fi Module:*** The ESP8266 is a very user-friendly and low-cost device to provide internet connectivity to your projects. The module can work both as an Access point and as a station. It will be used to send data to the server. The hardware system will be fitted in every garbage bin.
 
 ![1 2](https://github.com/rachelgupta/Smart-Routing-For-Urban-Waste-Collection/assets/83275253/cd1198b0-0dcd-4e33-acfb-35f0d8db76b2)
 
 ### c. Software
 The Arduino was programmed using the arduino c++ programming language. The server was created using the flask library in python. The hardware units in every garbage bin send the humidity and fill level data to the server using the wifi chip. The server then stores the data in a database. The data in the database is used to categorize the bins. These categories are used to determine which bin should be collected on the next round of garbage collection. The bins to be collected are then given to the routing algorithm which generates the optimal route for the garbage trucks to follow. That route can then be used to instruct the drivers, which bin to collect.
 
+![1 5](https://github.com/rachelgupta/Smart-Routing-For-Urban-Waste-Collection/assets/83275253/29719ab8-280f-4493-8a50-80ccde068d5d)
+
 ### d. Routing Algorithm
-Salesman Problem, is NP-hard. This means, it cannot be completely solved efficiently. Thus, approximate solutions are used. Ant-colony optimization is currently the best solution for finding the approximate optimal solution for garbage collection. It models the problem based on the behaviour of real life ants.
+Salesman Problem, is *NP-hard*. This means, it cannot be completely solved efficiently. Thus, approximate solutions are used. Ant-colony optimization is currently the best solution for finding the approximate optimal solution for garbage collection. It models the problem based on the behaviour of real life ants.
 
 ## 6. Result
 Upon result analysis and data analysis we are able to find that an optimal route has been charted on basis of the data points given. The waste disposal system has been highly inefficient and a cause of concern
@@ -75,8 +77,8 @@ for our cities. As our cities continue to grow in size and area the waste dispos
 This optimal route charting helps in an efficient garbage retrieval where an optimal route and efficient route has been prepared by the algorithm at the end. This helps in saving time , money ,fuel and other transportation costs for the company and most importantly it will increase the efficiency of garbage retrieval by 30%.
 
 We expect to see the following benefits from the implementation of the system.
-1. Low Cost: As not every trash bin will be filled everyday, the daily routes of garbage collection trucks will be shortened, resulting in lower cost for the municipal corporations.
-2. Lower Environmental Impact: Shorter routes result in lower CO2 emissions, which is better for the environment.
-3. Lower Traffic: Although garbage collection does not usually happen during rush hours, a lower number of trucks on the road is better for congested city traffic.
-4. Efficiency: The overall process of garbage collection and recycling becomes more streamlined and efficient.
+1. **Low Cost:** As not every trash bin will be filled everyday, the daily routes of garbage collection trucks will be shortened, resulting in lower cost for the municipal corporations.
+2. **Lower Environmental Impact:** Shorter routes result in lower CO2 emissions, which is better for the environment.
+3. **Lower Traffic:** Although garbage collection does not usually happen during rush hours, a lower number of trucks on the road is better for congested city traffic.
+4. **Efficiency:** The overall process of garbage collection and recycling becomes more streamlined and efficient.
 

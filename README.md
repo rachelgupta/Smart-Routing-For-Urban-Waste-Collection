@@ -1,4 +1,4 @@
-![image](https://github.com/rachelgupta/Smart-Routing-For-Urban-Waste-Collection/assets/83275253/a0946c83-7b54-49a8-a11e-91121b04eac2)# Smart-Routing-For-Urban-Waste-Collection
+# Smart-Routing-For-Urban-Waste-Collection
 
 ## 1. Problem
 Municipal solid waste (MSW) is considered as one of the primary factors that contribute greatly to the rising of climate change and global warming affecting sustainable development in many different ways. It is indeed necessary to investigate an efficient computerized method for the optimization of MSW collection that minimizes the environmental and other factors according to a given waste collection scenario.
@@ -30,7 +30,7 @@ Our system has segregated trash bins that are fitted with sensors to measure the
 ### b. Data Used
 The following parameters are used for categorization:
 1. Amount of garbage: Garbage is safe to be collected when it can work for 2 more days (to account for delays or public holidays)
-2. 2. Type of garbage: Waste generated can be of many different types, which may require different treatment. For example, dry waste is safer to keep in an enclosed location when compared to wet waste, thus, wet
+2. Type of garbage: Waste generated can be of many different types, which may require different treatment. For example, dry waste is safer to keep in an enclosed location when compared to wet waste, thus, wet
 waste requires more frequent cleaning (regardless of the fill level).
 3. Garbage Fill Rate: Just like the type of waste generated, the amount of waste generated in a day also varies widely and knowing the areas which create more trash per day can help a lot in long-term route planning and for equal division of garbage. As cities increase in size, and routes change, knowing the fill rates can help in breaking up routes.
 4. Area population: As the system is aimed towards Municipalities, they already have a database of population. As populations fluctuate, that data can also be used to facilitate long term planning of waste management resources.
@@ -65,3 +65,18 @@ The Arduino was programmed using the arduino c++ programming language. The serve
 
 ### d. Routing Algorithm
 Salesman Problem, is NP-hard. This means, it cannot be completely solved efficiently. Thus, approximate solutions are used. Ant-colony optimization is currently the best solution for finding the approximate optimal solution for garbage collection. It models the problem based on the behaviour of real life ants.
+
+## 6. Result
+Upon result analysis and data analysis we are able to find that an optimal route has been charted on basis of the data points given. The waste disposal system has been highly inefficient and a cause of concern
+for our cities. As our cities continue to grow in size and area the waste disposal will proportionally increase thereby having a waste disposal system driven by modern data analytics and machine learning technology is absolutely essential. Over here using the Arduino sensors what we have done is locate the data points for potential waste pickup and after that we have charted an optimal route using ant colonisation optimisation method.
+
+![1 3](https://github.com/rachelgupta/Smart-Routing-For-Urban-Waste-Collection/assets/83275253/c0da0306-7f12-4151-9408-6c1b21e53fdc)
+
+This optimal route charting helps in an efficient garbage retrieval where an optimal route and efficient route has been prepared by the algorithm at the end. This helps in saving time , money ,fuel and other transportation costs for the company and most importantly it will increase the efficiency of garbage retrieval by 30%.
+
+We expect to see the following benefits from the implementation of the system.
+1. Low Cost: As not every trash bin will be filled everyday, the daily routes of garbage collection trucks will be shortened, resulting in lower cost for the municipal corporations.
+2. Lower Environmental Impact: Shorter routes result in lower CO2 emissions, which is better for the environment.
+3. Lower Traffic: Although garbage collection does not usually happen during rush hours, a lower number of trucks on the road is better for congested city traffic.
+4. Efficiency: The overall process of garbage collection and recycling becomes more streamlined and efficient.
+

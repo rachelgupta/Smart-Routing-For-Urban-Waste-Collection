@@ -1,4 +1,4 @@
-![image](https://github.com/rachelgupta/Smart-Routing-For-Urban-Waste-Collection/assets/83275253/f0483926-7e38-4a54-b5e0-e84925106edc)# Smart-Routing-For-Urban-Waste-Collection
+# Smart-Routing-For-Urban-Waste-Collection
 
 ## 1. Problem
 Municipal solid waste (MSW) is considered as one of the primary factors that contribute greatly to the rising of climate change and global warming affecting sustainable development in many different ways. It is indeed necessary to investigate an efficient computerized method for the optimization of MSW collection that minimizes the environmental and other factors according to a given waste collection scenario.

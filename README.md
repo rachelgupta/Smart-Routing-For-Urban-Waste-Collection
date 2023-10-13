@@ -17,15 +17,15 @@ This algorithm calculates the closet bin from the starting path. Once you reach 
 
 The method provided by us is different form the present researchers solution. Our method calculates not only the closet bin but also finds the most optimal bin from the start. The most optimal bin meaning the bin which requires to be empty out as soon as possible as it either contains wet waste or the bin is completely full. 
 
-This is done by adding a component on each dust bin. This machine calculates the type of waste and the amount it is filled with. The entire data is then sent to server and from there the best path is calculated through ant-colony optimization algorithm technique which as the name suggests is a pheromone-based algorithm. As one ant follows other through the pheromone released by the first one, this algorithm works in the same way. Thus, this is the research gap, as the algorithm used by the present researchers is a python script-based algorithm as ant colony algorithm is a NP hard problem and is not easily solvable. Also, we have an extra component that measures the quantity and type of waste which is not proposed by them.
+This is done by adding a component on each dust bin. This machine calculates the type of waste and the amount it is filled with. The entire data is then sent to server and from there the best path is calculated through ant-colony optimization algorithm technique which as the name suggests is a pheromone-based algorithm. As one ant follows other through the pheromone released by the first one, this algorithm works in the same way. Thus, this is the research gap, as the algorithm used by the present researchers is a python script-based algorithm as ant colony algorithm is a NP hard problem and is not easily solvable. Also, we have an extra component that measures the quantity and type of waste which is not proposed by them.
 
 ## 4. Data and Time Periods
 
 ### a. Data Explaination
-Our system has segregated trash bins that are fitted with sensors to measure the depth of the trash (two bins, one for recyclable waste and the other for nonrecyclable waste, each with a depth sensor) and the other sensor to measure the temperature and humidity of trash. The sensors, connected to an Arduino, which sends the data to a central server. The server keeps track of the trash levels, and over a number of weeks, categorizes the bins according to the following parameters:
-. How quickly the bin is filled.
-. What are the levels of waste (both recyclable and non-recyclable)?
-. What is the kind of waste (domestic, industrial, etc.), assigning them different priorities.
+Our system has segregated trash bins that are fitted with sensors to measure the depth of the trash (two bins, one for recyclable waste and the other for nonrecyclable waste, each with a depth sensor) and the other sensor to measure the temperature and humidity of trash. The sensors, connected to an Arduino, which sends the data to a central server. The server keeps track of the trash levels, and over a number of weeks, categorizes the bins according to the following parameters:
+<br>. How quickly the bin is filled.
+<br>. What are the levels of waste (both recyclable and non-recyclable)?
+<br>. What is the kind of waste (domestic, industrial, etc.), assigning them different priorities.
 
 ### b. Data Used
 The following parameters are used for categorization:

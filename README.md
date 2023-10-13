@@ -46,8 +46,8 @@ Time Periods:
 ## 5. Methodology
 ### a. Overview
 In our proposal, garbage bins will be fitted with sensors which send the data to the central server. That server categorises the bins, determines which bins to collect and gives the data to the routing algorithm which creates the optimal route. That route is then given to the truck drivers. The figure below gives a diagrammatical representation of the complete system.
-<p align="center">
-![1 1](https://github.com/rachelgupta/Smart-Routing-For-Urban-Waste-Collection/assets/83275253/51fe4fb7-ee34-421f-8323-29adbe919e92)</p>
+
+![1 1](https://github.com/rachelgupta/Smart-Routing-For-Urban-Waste-Collection/assets/83275253/51fe4fb7-ee34-421f-8323-29adbe919e92)
 
 ### b. Hardware
 The hardware system was implemented using the Arduino platform, which is a low-cost, open-source microcontroller hardware platform. The components used were:
